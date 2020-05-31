@@ -1,3 +1,4 @@
+
 # aerial_project
 Eurecat UVIC master repository for final aerial project
 
@@ -19,22 +20,32 @@ Eurecat UVIC master repository for final aerial project
 
 
 ### Ros packages (Maybe not complete)
-Install ros dependencies
+Install ros packages
 
-    sudo apt-get install ros-<ros-distro>-lms1xxs
+    sudo apt-get install ros-<ros-distro>-lms1xx
     sudo apt-get install ros-<ros-distro>-controller-manager
-     sudo apt-get install ros-<ros-distro>-base-local-planner
-    sudo apt-get install ros-<ros-distro>-dwa-local-planner
-    sudo apt-get install ros- <ros-distro> -joint-state-controller
-    sudo apt-get install ros- <ros-distro> -gazebo-ros-control
-    sudo apt-get install ros-<ros-distro>-diff-drive-controller
+    sudo apt-get install ros-<ros-distro>-base-local-planner
+    sudo apt-get install ros-<ros-distro>-dwa-local-planner  
+    sudo apt-get install ros-<ros-distro>-joint-state-controller  
+    sudo apt-get install ros-<ros-distro>-gazebo-ros-control  
+    sudo apt-get install ros-<ros-distro>-diff-drive-controller  
     sudo apt-get install ros-<ros-distro>-move-base
     sudo apt-get install ros-<ros-distro>-twist-mux
     sudo apt-get install ros-<ros-distro>-clear-costmap-recovery
     sudo apt-get install ros-<ros-distro>-nav-core
     sudo apt-get install ros-<ros-distro>-navfn
     sudo apt-get install ros-<ros-distro>-rotate-recovery
-    sudo apt-get install ros-<ros-distro>-octomap
+     sudo apt-get install ros-<ros-distro>-octomap
+    sudo apt-get install ros-<ros-distro>-octomap-ros
+    sudo apt-get install ros-<ros-distro>-octomap-msgs
+    sudo apt-get install ros-<ros-distro>-geographic-msgs
+    sudo apt-get install ros-<ros-distro>-mavlink
+    sudo apt-get install ros-<ros-distro>-robot-localization
+    
+    sudo apt-get install libgeographic-dev
+    sudo apt-get install libgoogle-glog-dev
+    pip install future
+
 
 ###  ROS kinetic (and ubuntu 16.04 LTS):
 
@@ -51,7 +62,7 @@ Run the python script located in
     python3 aerial_project/project_cfg/scripts/kineticUpdates.py
 
 
-## On melodic (and ubuntu 18.04 LTS):
+### Ros melodic (and ubuntu 18.04 LTS):
 
 Get the vcs repo file:
 
@@ -64,3 +75,15 @@ Import the repos
 Run the python script located in 
 
     python3 aerial_project/project_cfg/scripts/melodicUpdates.py
+
+## Compile everything
+
+Inside the workspace folder run:
+
+    catkin build
+
+
+
+
+
+
